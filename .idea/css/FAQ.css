@@ -1,0 +1,153 @@
+header{
+    width:1200px;
+}
+
+main{
+    width:900px;
+}
+
+
+main ul{
+    height:15px;
+    width:450px;
+
+    display:flex;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+main li{
+    position:relative;
+    top: -5px;
+}
+
+#FAQ{
+    width:70%;
+    justify-self: center;
+    text-align: justify;
+}
+
+#FAQ>p{
+    font-size:18px;
+}
+
+h4{
+    font-size:30px;
+    margin-bottom:0px;
+}
+
+.preguntas{
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.pregunta{
+    border: 1px solid black;
+    border-radius:15px;
+    padding:5px;
+    width:60%;
+    background-color:#D9D3C1;
+    margin:10px;
+}
+
+.respuesta{
+    border: 1px solid black;
+    border-radius:20px;
+    width:60%;
+    padding:5px;
+    justify-self: right;
+    color:white;
+    background-color:#7D6149;
+    margin:10px;
+}
+
+/* 🔹 Responsividad */
+@media (max-width: 900px) {
+
+    header{
+        width: 70%;
+    }
+
+    main{
+        width:70%;
+    }
+
+    #logoCulinarIA{
+        width:70%;
+        height: 70%;
+    }
+
+    #logoico{
+        width:40%;
+    }
+
+    #buscar{
+        width:100%; 
+    }
+
+    #btn-iniciar{
+        position:relative;
+        left: 10px;
+    }
+
+    .card{
+        width:70%;
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        width: 70%;
+    }
+
+    main{
+        width:70%;
+    }
+
+    #logoCulinarIA{
+        width:70%;
+        height: 70%;
+    }
+
+    #logoico{
+        width:40%;
+    }
+
+    #busquedas{
+        width:50%; 
+        display: flex;
+        justify-self: center;
+    }
+
+    #btn-iniciar{
+        position:relative;
+        left: 10px;
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 400px) {
+    #busquedas{
+        width: 50%;
+        position:relative;
+        left: -20px;
+    }
+
+    .botones{
+        width:100%;
+    }
+
+    .botoncitos{
+        width:110%;
+    }
+
+    a{
+        font-size: smaller;
+        justify-self: center;
+    }
+
+    .infoReceta{
+        max-width:200px;
+    }
+}

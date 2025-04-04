@@ -1,0 +1,74 @@
+header{
+    width:1200px;
+}
+
+main{
+    width:900px;
+}
+
+ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+#contactos{
+    width:70%;
+    justify-self: center;
+
+    padding-top:50px;
+}
+
+#contactos>p{
+    padding-bottom:20px;
+
+    font-size: 30px;
+}
+ 
+.redesDer{
+    display:grid;
+    
+    align-items: center;
+    gap: 20px;
+    padding-bottom:30px;
+
+    grid-template-areas: "texto imagen";
+}
+
+.redesIzq{
+    display:grid;
+    
+    align-items: center;
+    gap: 20px;
+    padding-bottom:30px;
+
+    grid-template-areas: "imagen texto";
+}
+
+.redes p{
+    grid-area:texto;
+    display:flex;
+
+    flex-direction: column;
+
+    font-family: 'Asar';
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 550;
+}
+
+.redes span{
+    text-align: justify;
+}
+
+.redes img{
+    grid-area:imagen;
+    width:170px;
+    height:150px;
+
+    border-radius:90px;
+    object-fit: cover;
+}
+
+.redes img:hover {
+    transform: scale(1.05);
+}

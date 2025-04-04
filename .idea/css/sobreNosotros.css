@@ -1,0 +1,68 @@
+main{
+    display: flex;
+    justify-content:space-between;
+}
+
+
+aside {
+    width:20%;
+
+    order:2;
+    display: flex;
+    flex-direction:column;
+}
+
+aside p{
+    padding-bottom:20px;
+
+    text-align: center;
+    border-bottom: solid 1px black;
+}
+
+.noticia{
+    grid-area:imagenes;
+
+    width:100%;
+    height: 100px;
+}
+
+/* Texto sobre la imagen */
+.item {
+    position: relative; /* Para que el span se posicione en relación con la imagen */
+    display: inline-block; /* Evita que se expanda innecesariamente */
+}
+
+.item span {
+    position: absolute; /* Lo coloca sobre la imagen */
+    bottom: 10px; /* Ajusta su posición */
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block; /* Hace que respete width y padding */
+    max-width:80%;
+    z-index: 10; /* Asegura que esté por encima de la imagen */
+}
+
+ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+#texto{
+    width:75%;
+}
+
+#texto p{
+    display:flex;
+    flex-direction: row;
+    justify-self: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+span{
+    padding:10px;
+    max-width:25%;
+}

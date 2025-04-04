@@ -1,0 +1,33 @@
+header{
+    width:1000px;
+}
+
+main{
+    width:800px;
+}
+
+#texto{
+    width:70%;
+
+    text-align: justify;
+    justify-self: center;
+    padding:50px;
+    font-family: 'Asar';
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 550;
+}
+
+main ul{
+    height:15px;
+    width:450px;
+
+    display:flex;
+    justify-content: space-around;
+    justify-self: center;
+}
+
+main li{
+    position:relative;
+    top: -5px;
+}

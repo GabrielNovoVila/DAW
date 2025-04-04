@@ -1,181 +1,6 @@
-/* Estilos generales */
-body {
-    font-family: "Roboto Light", sans-serif;
-    background-color: #BFAA8F;
-    margin: 0px auto;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-}
-
-h2{
-    text-align: center;
-    font-family: "Asar", "Roboto Light", sans-serif;
-    font-size: 50px;
-    color: black;
-}
-/* Estilos para el header */
-header .contenedor-img{
-    display: flex;                       /* Usamos Flexbox para alinear los elementos */
-    justify-content: space-around;      /* Alineamos el logo a la izquierda y "Mi Cuenta" a la derecha */
-    align-items: center;                 /* Alineamos las imágenes verticalmente al centro */
-    padding: 10px;                       /* Espaciado dentro del header */
-    flex-wrap: wrap;                     /* Permitimos que los elementos se envuelvan en caso de que sea necesario */
-}
-
-header{
-    width: 1500px;
-    margin: 0 auto;
-}
-
-/* Imagen de logo */
-#logoico {
-    display: flex;
-    margin:0px auto;
-}
-
-/* Imagen "Mi Cuenta" */
-header .micuentaico {
-    width: 50px;                         /* Ajustamos el tamaño de la imagen de "Mi Cuenta" */
-    height: 50px;
-    border-radius: 100%;
-    right: 10px;
-    top: 10px;
-    background-color: white;
-}
-
-.acercaNosotros{
-    width:200px;
-    height:25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #593520;
-    color:white;
-    border-radius: 10px;
-}
-
-#logoCulinarIA{
-    display: flex;
-    margin:0px auto;
-}
-
-/* Estilos para el menú de navegación */
-nav {
-    width: 70%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
-    text-align:center;                  /* Centrar los enlaces del menú */
-    margin: 10px auto;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
-}
-
-nav ul {
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
-    background-color: #593520;
-    list-style: none;
-    padding: 10px 15px;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    font-family: "Roboto Light", sans-serif;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
-    width: 1024px;
-    margin: 20px auto;
-    background-image: url("../imagenes/fondo.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #BFAA8F;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-
-
-
-
-
-#busquedas{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    color:white;
-    border-radius: 10px;
-    grid-template-areas: "botones busqueda busqueda";
-}
-
-.buscador{
-    grid-area:"busqueda";
-
-    display:flex;
-    flex-direction: column;
-}
-
-#buscar{
-    width:500px;
-    height: 30px;
-    border-radius: 10px;
-}
-
-.botones{
-    grid-area:"botones";
-
-    margin-right: 50px;;
-}
-
-.botoncitos{
-
-    grid-area: "botoncitos";
-    width:200px;
-    height:35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20px;
-    background-color: #593520;
-    color:white;
-    border-radius: 30px;
-    text-decoration: none;
-    
-}
-
 #comidas{
     display:flex;
     flex-direction: row;
-}
-
-#btn-iniciar{
-    background-image: url("../imagenes/lupa.png");
-    position:relative;
-    top:8px;
-    left:5px;
-    background-color: #593520;
-    background-size: contain;
-    width:30px;
-    height:30px;
-    border-radius:90px;
-    cursor:pointer;
 }
 
 .contenedor-img{
@@ -270,8 +95,8 @@ main {
 }
 
 .lado img {
-    width:130px;
-    height:130px;
+    width:132px;
+    height:132px;
 }   
 
 
@@ -281,99 +106,83 @@ main {
 
     display: flex;
     gap: 5px;
+
+    position:relative;
+    bottom: 5px;
 }
 
 .abajo img {
-
-    width:130px;
-    height:130px;
+    width:132px;
+    height:132px;
 }
 
 /* 🔹 Responsividad */
 @media (max-width: 900px) {
-    main{
-        width:70%;
-    }
-
-    #logoCulinarIA{
-        width:70%;
-        height: 70%;
-    }
-
-    #logoico{
-        width:40%;
-    }
 
     .grid-container {
+        width: 50%;
         grid-template-columns: 1fr;
         grid-template-areas:
+            "texto"
             "leader"
             "lado"
             "abajo";
     }
-
-    .leader{
-        width:40%;
+    .grid-container2 {
+        width: 50%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "leader"
+            "lado"
+            "abajo"
+            "texto";
     }
 
-    .lado{
-        width: 40%;
+    .item{
+        width:35%;
     }
 
     .abajo{
-        width: 40%;
         flex-direction: column;
+    }
+
+    .leader img{
+        width: 200px;
+        height: 200px;
     }
 }
 
 @media (max-width: 600px) {
-    .abajo {
-        flex-direction: column;
-        align-items: center;
+
+    .grid-container {
+        width: 50%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto"
+            "leader"
+            "lado"
+            "abajo";
+    }
+    .grid-container2 {
+        width: 50%;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "leader"
+            "lado"
+            "abajo"
+            "texto";
     }
 
-    .leader{
-        width:60%;
-    }
-
-    .lado{
-        width: 30%;
-    }
-
-    .lado img{
-        width: 120.5px;
-        height: 120.5px;
+    .item{
+        width:35%;
     }
 
     .abajo{
-        width: 30%;
-        flex-direction:column;
-        align-items: center;
+        flex-direction: column;
     }
 
-    .abajo img{
-        width: 78.7px;
-        height: 78.7px;
-    }   
-
-    .item span{
-        font-size: 10px;
+    .leader img{
+        width: 100px;
+        height: 100px;
     }
-}
-
-/* Efecto hover */
-
-.item:hover {
-    transform: scale(1.05);
-}
-
-
-/* Footer */
-footer {
-    font-family: Inter, sans-serif;
-    text-align: right; /* Alinea el texto a la derecha */
-    padding: 10px 20px; /* Ajusta el espacio interno (arriba/abajo 10px, derecha/izquierda 20px) */
-    background: #333;
-    color: white; /* Color del texto*/
-    font-size: 12px; /* Reduce el tamaño de la fuente */
 }

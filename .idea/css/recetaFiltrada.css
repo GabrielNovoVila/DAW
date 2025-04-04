@@ -1,0 +1,185 @@
+header{
+    width:1200px;
+}
+
+main{
+    width:900px;
+}
+
+.card {
+    display: grid;
+    align-items: center; /* Alinear verticalmente los elementos */
+    justify-content: start; /* Asegurar que todo se alinee a la izquierda */
+    justify-self: center;
+    margin: 20px;
+    color: black;
+    border-radius: 10px;    
+    width: 500px;
+    height: 100px;
+    border: 5px solid black;
+    overflow: hidden; /* Evita que elementos sobresalgan */
+    padding:0px;
+    background-color: #D9D3C1;
+
+    grid-template-columns: 100px auto; /* Primera columna para la imagen, segunda para el texto */
+    grid-template-areas: "foto texto"; /* Definir áreas correctamente */
+}
+
+.fotitos {
+    grid-area: foto; /* Asigna la imagen al área correspondiente */
+    width: 100px; /* Hace que la imagen tenga el mismo ancho que la columna */
+    height: 100px; /* Hace que ocupe toda la altura del card */
+    object-fit: cover; /* Recorta la imagen para llenar el contenedor sin deformarse */
+    display:block;
+    border-right:5px solid black;
+
+    position:relative;
+    bottom:17px;
+}
+
+.content {
+    grid-area: texto; /* Asegura que el texto esté en la parte derecha */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px; /* Agregar espacio entre la imagen y el texto */
+    position:relative;
+    bottom:13px;
+    
+
+    grid-template-areas: 
+        "titulo"
+        "barra"
+        "descripcion";
+}
+
+hr{
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    border:none;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.card hr{
+    position:relative;
+    bottom: -20px; /* Ajustar la posición del hr dentro del card */
+}
+
+
+.content h4{
+    grid-area:titulo;
+
+    position:relative;
+    top:5px;
+}
+
+.content hr{    
+    grid-area:barra; /* Asigna el hr al área correspondiente */
+    width: 2000px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    position:relative;
+    bottom: 8px; /* Ajustar la posición del hr dentro del card */
+    left: -10px; /* Ajustar la posición del hr dentro del card */
+}
+
+.content p{
+    grid-area:descripcion;
+    position:relative;
+    bottom: 10px; /* Ajustar la posición del texto dentro del card */
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 🔹 Responsividad */
+@media (max-width: 900px) {
+
+    header{
+        width: 70%;
+    }
+
+    main{
+        width:70%;
+    }
+
+    #logoCulinarIA{
+        width:70%;
+        height: 70%;
+    }
+
+    #logoico{
+        width:40%;
+    }
+
+    #buscar{
+        width:100%; 
+    }
+
+    #btn-iniciar{
+        position:relative;
+        left: 10px;
+    }
+
+    .card{
+        width:70%;
+    }
+}
+
+@media (max-width: 600px) {
+    header{
+        width: 70%;
+    }
+
+    main{
+        width:70%;
+    }
+
+    #logoCulinarIA{
+        width:70%;
+        height: 70%;
+    }
+
+    #logoico{
+        width:40%;
+    }
+
+    #busquedas{
+        width:50%; 
+        display: flex;
+        justify-self: center;
+    }
+
+    #btn-iniciar{
+        position:relative;
+        left: 10px;
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 400px) {
+    #busquedas{
+        width: 50%;
+        position:relative;
+        left: -20px;
+    }
+
+    .botones{
+        width:100%;
+    }
+
+    .botoncitos{
+        width:110%;
+    }
+
+    #busquedas a{
+        font-size: smaller;
+        justify-self: center;
+    }
+}
