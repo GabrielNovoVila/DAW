@@ -10,7 +10,8 @@
         <meta name = "robots" content = "noindex, nofollow">
         <meta name="author" content="Irene Leis Montes, Gabriel Novo Vila">
 
-        <link rel="stylesheet" href="..\css\estilos.css">
+        <link rel="stylesheet" href="..\css\estilos2.css">
+        <link rel="stylesheet" href="..\css\receta.css">
     </head>
 
     <body>
@@ -44,30 +45,149 @@
         </header>
 
         <main>
+
+            <section id="busquedas">
+                <form action="gestionarperfil.html" method="post" class="buscador">
+
+                    <label for="buscador">Buscador de recetas:</label>
+                    <input name="buscar" id="buscar" placeholder="Búsqueda de recetas...">
+                    
+                </form>
+
+                <button id="btn-iniciar" type="submit" class="buscador"></button>
+                
+            </section>
+
             <section id="comidas"> <!-- Aquí van los elementos destacados -->
 
                 <!--Poner el buscador de recetas-->
                 
+                <h2>
+                    Tarta de queso fría
+                </h2>
                 <p> 
-                    Receta
+                    La tarta de queso de CulinarIA ha sido durante mucho tiempo la receta más popular del blog.
+                    Creo que su éxito se debe a que no necesita horno para su elaboración y es una receta de queso 
+                    muy fácil de hacer y que tiene unos ingredientes muy económicos. 
                 </p>
 
-                <img 
-                    href="tarta.jpg" alt="Tartita de queso" width="719" height="316">
+                <img src="../imagenes/tartaQueso.jpeg" alt="Tartita de queso" id="tartaQueso">
                 </img>
 
-                <p> 
-                    Información de la receta
-                </p>
-                
-                <p> 
-                    Ingredientes
-                </p>
+                <div class="infoReceta">
+                    <p> 
+                        <strong>
+                            Información de la receta
+                        </strong>
+                        <ul>
+                            <li>
+                                Tiempo de preparación: 25 minutos   
+                            </li>
+                            <li>
+                                Tiempo de cocinado: 10 minutos 
+                            </li>
+                            <li>
+                                Tiempo total: 35 minutos + 3 1/2 horas de reposo en la nevera   
+                            </li>
+                            <li>
+                                Raciones: 8   
+                            </li>
+                            <li>
+                                Categoría: postres   
+                            </li>
+                            <li>    
+                                Tipo de cocina: internacional   
+                            </li>
+                            <li>
+                                Kcal por ración: 581   
+                            </li>
+                            <li>
+                                Necesario molde redondo desmontable de 20 cm de radio  
+                            </li>
+                        </ul>
+                    </p>
+                    
+                    <p> 
+                        <br>
 
-                <p> 
-                    Preparación
-                </p>
+                        <strong>
+                            Ingredientes
+                        </strong>
 
+                        <ul>
+                            <li>
+                                150 g de galletas tipo María   
+                            </li>
+                            <li>
+                                100 g de mantequilla   
+                            </li>
+                            <li>
+                                4 hojas de gelatina   
+                            </li>
+                            <li>
+                                400 ml de nata líquida para montar 
+                            </li>
+                            <li>
+                                80 g de azúcar   
+                            </li>
+                            <li>
+                                500 g de queso crema estilo Philadelphia   
+                            </li>
+                            <li>
+                                150 g de mermelada de fresa   
+                            </li>
+                        </ul>
+                    </p>
+
+                </div>
+
+                <hr>
+
+                <div class="preparacion">
+                <p> 
+                    <strong>
+                        Preparación
+                    </strong>
+                    <ol>
+                        <li>
+                            Trituramos las galletas, de manera que quede polvorienta.
+                        </li>
+                        <li>
+                            Derretimos la mantequilla y, cuando se enfríe, la añadimos a las galletas.   
+                        </li>
+                        <li>
+                            Mezclamos bien las galletas con la mantequilla. 
+                        </li>
+                        <li>
+                            Forramos la base del molde con papel vegetal.   
+                        </li>
+                        <li>
+                            Colocamos la masa de galletas en la base del molde y metemos en la nevera.  
+                        </li>
+                        <li>
+                            Ponemos la gelatina a hidratar en agua fría 15 minutos.   
+                        </li>
+                        <li>
+                            Calentamos la nata con el azúcar y cuando hierva, añadimos el queso crema y cocinamos 5 minutos.       
+                        </li>
+                        <li>
+                            Añadimos la gelatina escurrida y dejamos que la mezcla se atempere.   
+                        </li>
+                        <li>
+                            Vertemos la mezcla en el molde y refrigeramos un mínimo de 3 horas. 
+                        </li>
+                        <li>
+                            Añadimos la mermelada de fresa por la superficie de la tarta.  
+                        </li>
+                        <li>
+                            Refrigeramos otros 30 minutos en la nevera.   
+                        </li>
+                        <li>
+                            Desmoldamos la tarta con cuidado y servimos.
+                        </li>
+                    </ol>
+                </p>
+                </div>
 
             </section>
         </main>

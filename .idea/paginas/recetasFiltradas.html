@@ -10,7 +10,9 @@
         <meta name = "robots" content = "noindex, nofollow">
         <meta name="author" content="Irene Leis Montes, Gabriel Novo Vila">
 
-        <link rel="stylesheet" href="..\css\estilos.css">
+        <link rel="stylesheet" href="..\css\estilos2.css">
+        <link rel="stylesheet" href="..\css\recetaFiltrada.css">
+
     </head>
 
     <body>
@@ -41,50 +43,64 @@
                 </ul>
             </nav>
 
-      </header>
-
-        <section>
-            <h2>Recetario</h2> 
-
-            <button><a href="recetasDestacadas.html">Recetas destacadas</a></button>
-            <button>Filtrar</button>
-            <!--Poner el buscador de recetas-->
-
-        </section>
+        </header>
 
         <main>
+
+            <h2>Recetario</h2> 
+
+            <section id="busquedas">            
+            
+                <div class="botones">
+                    <a href='recetasFiltradas.html' class="botoncitos">Recetas destacadas</a>
+                    <a href='recetasFiltradas.html' class="botoncitos">Filtrar</a>
+                </div>
+
+                <form action="gestionarperfil.html" method="post" class="buscador">
+
+                    <label for="buscador">Buscador de recetas:</label>
+                    <input name="buscar" id="buscar" placeholder="Búsqueda de recetas...">
+                    
+                </form>
+
+                <button id="btn-iniciar" type="submit" class="buscador"></button>
+                <!--Poner el buscador de recetas-->
+
+            </section>
+
+
             <section id="comidas"> <!-- Aquí van los elementos destacados -->
                 
-                <p> 
+                <hr>
+                
+                <h3> 
                     Búsquedas relacionadas
-                </p>
+                </h3>
 
-                <a href="receta.html" class="card">
-                    <div class="image">
-                        <img src="tartaAbuela.jpg" alt="Tarta de la abuela">
-                    </div>
+                <a href="receta.html" class="item card">
+                    <img src="../imagenes/tartaAbuela.webp" alt="Tarta de la abuela" class="fotitos">
                     <div class="content">
-                        <h3>Tarta de la abuela</h3>
+                        <h4>Tarta de la abuela</h4>
+                        <hr>
                         <p>Una tarta que te llevará a la infancia c...</p>
                     </div>
                 </a>
 
-                <a href="receta.html" class="card">
-                    <div class="image">
-                        <img src="tartaQueso.jpg" alt="Tarta de queso fría">
-                    </div>
+                <a href="receta.html" class="item card">
+                    <img src="../imagenes/tartaQueso.jpeg" alt="Tarta de queso fría" class="fotitos">
                     <div class="content">
-                        <h3>Tarta de queso fría</h3>
+                        <h4>Tarta de queso fría</h4>
+                        <hr>
                         <p>Con una base de galleta deliciosa tendr...</p>
                     </div>
                 </a>
 
-                <a href="receta.html" class="card">
-                    <div class="image">
-                        <img src="tartaZanahoria.jpg" alt="Tarta de zanahoria baja en calorías">
-                    </div>
+                <a href="receta.html" class="item card">
+                    <img src="../imagenes/tartaZanahoria.jpg" alt="Tarta de zanahoria baja en calorías" class="fotitos">
+                    <hr>
                     <div class="content">
-                        <h3>Tarta de zanahoria baja en calorías</h3>
+                        <h4>Tarta de zanahoria baja en calorías</h4>
+                        <hr>
                         <p>Una alternativa algo más sana para la t...</p>
                     </div>
                 </a>
