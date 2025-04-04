@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
+
 /* Estilos generales */
 body {
     font-family: 'Asar', sans-serif;
@@ -182,6 +184,11 @@ main {
 
     width:180px;
     height:180px;
+}
+
+h2{
+    padding-left: 100px;
+    color:white;
 }
 
 /* 🔹 Responsividad */
