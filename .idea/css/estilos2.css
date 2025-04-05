@@ -4,6 +4,9 @@
 body {
     font-family: 'Asar', sans-serif;
     background-color: #BFAA8F;
+    background-image: url("../imagenes/fondo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0px auto;
     padding: 0;
     display: flex;
@@ -35,7 +38,7 @@ header .contenedor-img{
 }
 
 header{
-    width: 1500px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -93,13 +96,7 @@ main {
     flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
     width: 1024px;
     margin: 20px auto;
-    background-image: url("../imagenes/fondo.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #BFAA8F;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 #busquedas{
@@ -218,6 +215,38 @@ main {
     #btn-iniciar{
         position:relative;
         left: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    header{
+        width: 70%;
+    }
+
+    main{
+        width:70%;
+    }
+
+    #logoCulinarIA{
+        width:70%;
+        height: 70%;
+    }
+
+    #logoico{
+        width:40%;
+    }
+
+    #buscar{
+        width:100%; 
+    }
+
+    #btn-iniciar{
+        position:relative;
+        left: 10px;
+    }
+
+    .botoncitos{
+        width: 50%;
     }
 }
 
