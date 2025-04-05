@@ -1,6 +1,20 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Imágenes responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 main{
     display: flex;
     justify-content:space-between;
+    width: 100%;
+    max-width: 1024px; /* Mantienes tu máximo pero se ajusta */
+    box-sizing: border-box; /* Incluye padding en el ancho */
 }
 
 
@@ -48,6 +62,7 @@ aside p{
 ul{
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 #texto{
@@ -65,4 +80,131 @@ ul{
 span{
     padding:10px;
     max-width:25%;
+}
+
+/* Responsividad para tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+
+    .grid-container {
+        width: 95%; /* Reducción más gradual */
+    }
+    
+    .leader img {
+        max-width: 100%; /* Forza ajuste al contenedor */
+    }
+
+    main {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 50%;
+        order: 0;
+        margin-top: 20px;
+    }
+    
+    #texto {
+        width: 100%;
+    }
+    
+    ul {
+        flex-wrap: wrap;
+    }
+    
+    span {
+        max-width: 45%;
+        margin-bottom: 15px;
+    }
+
+    a{
+        font-size:90%;
+    }
+}
+
+/* Responsividad para móviles (hasta 767px) */
+@media (max-width: 767px) {
+    .item span {
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+    
+    aside p {
+        padding-bottom: 10px;
+        font-size: 14px;
+    }
+    
+    #texto p {
+        flex-direction: column;
+    }
+    
+    span {
+        max-width: 100%;
+        padding: 5px;
+    }
+    
+    .noticia {
+        height: auto;
+        margin-bottom: 15px;
+    }
+    a{
+        font-size:90%;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    .item span {
+        font-size: 10px;
+        bottom: 5px;
+        left: 5px;
+    }
+    
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    aside p {
+        font-size: 12px;
+    }
+    li{
+        text-align: left;
+        padding:0px;
+        margin:0px;
+    }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+    nav ul {
+        justify-content: center; /* Centra los elementos */
+        flex-wrap: nowrap; /* Evita saltos de línea */
+    }
+
+    nav ul li {
+        margin: 0 25px; /* Espaciado proporcional */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Texto más legible */
+        white-space: nowrap; /* Evita abreviar "FORO", "BLOG" */
+    }
+}
+
+/* Base para el menú */
+nav ul {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    flex-wrap: wrap; /* Permite saltos de línea si es necesario */
+    padding: 10px 5px; /* Padding reducido */
+}
+
+nav ul li {
+    margin: 0 1vw; /* Espaciado proporcional al viewport */
+}
+
+nav ul li a {
+    font-size: clamp(12px, 1.5vw, 16px); /* Tamaño flexible entre 12px y 16px */
+    white-space: nowrap; /* Evita que se corte el texto */
+    padding: 5px 10px;
 }
