@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tartas>
+    <tarta>
+        <nombre descripcion="Tarta de queso fría">Queso</nombre>
+        <descripcion>
+            La tarta de queso de CulinarIA ha sido durante mucho tiempo la receta más popular del blog.
+            Creo que su éxito se debe a que no necesita horno para su elaboración y es una receta de queso muy fácil de hacer 
+            y que tiene unos ingredientes muy económicos.
+        </descripcion>
+        <foto>
+            ../imagenes/tartaQueso.jpeg
+        </foto>
+        <informacion>
+            <info>Tiempo de preparación: 25 minutos</info>
+            <info>Tiempo de cocinado: 10 minutos</info>
+            <info>Tiempo total: 35 minutos + 3 1/2 horas de reposo en la nevera</info>
+            <info>Nº raciones: 8</info>
+            <info>Categoría: postres</info>
+            <info>Tipo de cocina: internacional</info>
+            <info>Kcal por ración: 581</info>
+            <info>Necesario molde redondo desmontable de 20 cm de radio</info>
+        </informacion>
+        <ingredientes>
+            <ingrediente>150 g de galletas tipo María</ingrediente>
+            <ingrediente>100 g de mantequilla</ingrediente>
+            <ingrediente>4 hojas de gelatina</ingrediente>
+            <ingrediente>400 ml de nata líquida para montar</ingrediente>
+            <ingrediente>80 g de azúcar</ingrediente>
+            <ingrediente>500 g de queso crema estilo Philadelphia</ingrediente>
+            <ingrediente>150 g de mermelada de fresa</ingrediente>
+        </ingredientes>    
+        <preparacion>
+            <paso>Trituramos las galletas, de manera que quede polvorienta.</paso>
+            <paso>Derretimos la mantequilla y, cuando se enfríe, la añadimos a las galletas.</paso>
+            <paso>Mezclamos bien las galletas con la mantequilla.</paso>
+            <paso>Forramos la base del molde con papel vegetal.</paso>
+            <paso>Colocamos la masa de galletas en la base del molde y metemos en la nevera.</paso>
+            <paso>Ponemos la gelatina a hidratar en agua fría 15 minutos.</paso>
+            <paso>Calentamos la nata con el azúcar y cuando hierva, añadimos el queso crema y cocinamos 5 minutos.</paso>
+            <paso>Añadimos la gelatina escurrida y dejamos que la mezcla se atempere.</paso>
+            <paso>Vertemos la mezcla en el molde y refrigeramos un mínimo de 3 horas.</paso>
+            <paso>Añadimos la mermelada de fresa por la superficie de la tarta.</paso>
+            <paso>Refrigeramos otros 30 minutos en la nevera.</paso>
+            <paso>Desmoldamos la tarta con cuidado y servimos.</paso>
+        </preparacion>
+    </tarta>
+    <tarta>
+        <nombre descripcion="Tarta de la abuela">Abuela</nombre>
+        <descripcion>
+            Esta es una de las recetas más famosas y fáciles de preparar y además, de las más ricas.
+            La máxima complicación será preparar la crema, el resto es coser y cantar.
+            Antiguamente, era muy común hacer la tarta de la abuela con natillas usando el famoso preparado
+            en polvo que solamente necesitaba leche para convertirse en una crema dulce, natillas o flan, según la cantidad de leche añadida.
+            En nuestra receta, hemos optado por preparar una deliciosa crema casera ya que así, la tarta queda todavía más rica, 
+            aunque esta se puede sustituir fácilmente por el preparado tradicional usando 1 sobre y 1 litro de leche.
+        </descripcion>
+        <foto>
+            ../imagenes/tartaAbuela.webp
+        </foto>
+        <informacion>
+            <info>Tiempo de preparación: 40 minutos</info>
+            <info>Tiempo de cocinado: 30 minutos</info>
+            <info>Tiempo total: 1 h 10 minutos + tiempo de enfriado</info>
+            <info>Nº raciones: 12</info>
+            <info>Categoría: postres</info>
+            <info>Tipo de cocina: española</info>
+            <info>Kcal por ración: 385</info>
+            <info>Necesario molde o fuente de unos 20 x 20 cm</info>
+        </informacion>
+        <ingredientes>
+            <ingrediente>900 g de leche entera</ingrediente>
+            <ingrediente>150 g de azúcar blanco</ingrediente>
+            <ingrediente>6 yemas</ingrediente>
+            <ingrediente>50 g de harina de maíz (tipo maicena)</ingrediente>
+            <ingrediente>200 g de chocolate con leche</ingrediente>
+            <ingrediente>100 g de nata para montar (mínimo 35% de materia grasa)</ingrediente>
+            <ingrediente>40 galletas rectangulares</ingrediente>
+        </ingredientes>    
+        <preparacion>
+            <paso>Ponemos a calentar 800 gramos de leche entera.</paso>
+            <paso>Mientras tanto, mezclamos el azúcar blanco con las yemas hasta que la mezcla se aclare ligeramente.</paso>
+            <paso>Agregamos la harina de maíz y mezclamos muy bien hasta que no queden restos.</paso>
+            <paso>Vertemos poco a poco la leche caliente sobre la mezcla de huevos y azúcar y la integramos.</paso>
+            <paso>Volvemos a llevar el conjunto a fuego medio, sin dejar de remover con las varillas, hasta que espese sin que llegue a hervir.</paso>
+            <paso>Cuando haya espesado, retiramos del fuego y cubrimos con film transparente y reservamos.</paso>
+            <paso>Ponemos el chocolate con leche en un bol y le añadimos la nata para montar, caliente.</paso>
+            <paso>Mezclamos hasta conseguir una crema de chocolate o ganache homogénea. Cubrimos con film transparente y reservamos.</paso>
+            <paso>Comenzamos a montar la tarta. Para ello, mojamos las galletas ligeramente en los 100 gramos de leche que dejamos antes.</paso>
+            <paso>Cubrimos toda la superficie del molde con galleta de forma que no nos queden prácticamente huecos.</paso>
+            <paso>Vertemos la mitad de la crema y la alisamos.</paso>
+            <paso>Mojamos las galletas en leche y ponemos una segunda capa de galletas sobre la crema.</paso>
+            <paso>Se repiten los 2 últimos pasos hasta que nos quedemos sin galletas o crema</paso>
+            <paso>Dejamos cuajar la tarta en la nevera y servimos</paso>
+        </preparacion>
+    </tarta>
+    <tarta>
+        <nombre descripcion="Tarta de zanahoria baja en calorías">Zanahoria</nombre>
+        <descripcion>
+            La tarta de zanahoria o carrot cake se ha convertido en un imprescindible en nuestros recetarios.
+            Este clásico de la repostería anglosajona ha venido para quedarse, y es que su jugosidad conquista a todo el que la prueba. 
+            A continuación, la receta fácil, paso a paso.
+        </descripcion>
+        <foto>
+            ../imagenes/tartaZanahoria.jpg
+        </foto>
+        <informacion>
+            <info>Tiempo de preparación: 40 minutos</info>
+            <info>Tiempo de cocinado: 30 minutos</info>
+            <info>Tiempo total: 1h 10 minutos + tiempo reposo</info>
+            <info>Nº raciones: 12</info>
+            <info>Categoría: postres</info>
+            <info>Tipo de cocina: americana</info>
+            <info>Kcal por ración: 626</info>
+            <info>3 moldes desmontables de 15 cm de diámetro</info>
+        </informacion>
+        <ingredientes>
+            <ingrediente>160 g de azúcar blanco</ingrediente>
+            <ingrediente>160 g de azúcar moreno</ingrediente>
+            <ingrediente>4 huevos M</ingrediente>
+            <ingrediente>240 g de aceite de girasol</ingrediente>
+            <ingrediente>320 g de zanahoria rallada</ingrediente>
+            <ingrediente>240 g de harina de trigo</ingrediente>
+            <ingrediente>2 cucharaditas y media de levadura química (tipo Royal)</ingrediente>
+            <ingrediente>2 cucharaditas de canela en polvo</ingrediente>
+            <ingrediente>160 g de mantequilla sin sal a temperatura ambiente</ingrediente>
+            <ingrediente>320 g de azúcar glas</ingrediente>
+            <ingrediente>160 g de queso crema frío (tipo Philadelphia)</ingrediente>
+        </ingredientes>    
+        <preparacion>
+            <paso>Mezclamos los dos tipos de azúcar, los huevos y el aceite</paso>
+            <paso>Añadimos la zanahoria</paso>
+            <paso>Tamizamos la harina, la levadura y la canela</paso>
+            <paso>Precalentamos el horno a 180 ºC. Repartimos la masa en los 3 moldes y horneamos durante 30-35 minutos</paso>
+            <paso>Retiramos los bizcochos, dejamos enfriar, desmoldamos, cubrimos con film transparente y guardamos en la nevera</paso>
+            <paso>Preparamos la crema batiendo la mantequilla con el azúcar glas</paso>
+            <paso>Añadimos el queso crema y batimos</paso>
+            <paso>Colocamos el primer bizcocho y una capa de crema</paso>
+            <paso>Seguimos con el segundo bizcocho y otra capa de crema</paso>
+            <paso>Ponemos el último bizcocho y cubrimos con crema los laterales de la tarta</paso>
+            <paso>Cubrimos con crema la parte superior, la decoramos al gusto y, ¡a disfrutar!</paso>
+            <paso>Guardar en la nevera si no se consume en el momento</paso>
+        </preparacion>
+    </tarta>
+</tartas>
