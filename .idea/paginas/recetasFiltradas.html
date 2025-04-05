@@ -47,13 +47,15 @@
 
         <main>
 
+            <p id="filtro"></p> <!-- Con JQuery, este <p> se transformará en el filtro de recetas -->
+
             <h2>Recetario</h2> 
 
             <section id="busquedas">            
             
                 <div class="botones">
                     <a href='recetasFiltradas.html' class="botoncitos">Recetas destacadas</a>
-                    <a href='recetasFiltradas.html' class="botoncitos">Filtrar</a>
+                    <a id="btn-filtro" class="botoncitos">Filtrar</a>
                 </div>
 
                 <form action="gestionarperfil.html" method="post" class="buscador">
@@ -111,6 +113,9 @@
         <footer>
             <p>© 2025 CulinarIA - Todos los derechos reservados</p>
         </footer>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../js/filtro.js"></script>
     </body>
 
 </html>

@@ -52,12 +52,12 @@
                 
                 <div class="botones">
                     <a href='recetasFiltradas.html' class="botoncitos">Recetas destacadas</a>
-                    <a href='recetasFiltradas.html' class="botoncitos">Filtrar</a>
+                    <a class="botoncitos" id="btn-filtro">Filtrar</a>
                 </div>
 
                 <form action="gestionarperfil.html" method="post" class="buscador">
 
-                    <label for="buscador">Buscador de recetas:</label>
+                    <label for="buscar">Buscador de recetas:</label>
                     <input name="buscar" id="buscar" placeholder="Búsqueda de recetas...">
                     
                 </form>
@@ -66,6 +66,8 @@
                 <!--Poner el buscador de recetas-->
     
             </section>
+
+            <p id="filtro"></p> <!-- Con JQuery, este <p> se transformará en el filtro de recetas -->
 
             <section id="comidas"> <!-- Aquí van los elementos destacados -->
                 <div class="grid-container">
@@ -147,6 +149,10 @@
         <footer>
             <p>© 2025 CulinarIA - Todos los derechos reservados</p>
         </footer>
+
+     
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../js/filtro.js"></script>
     </body>
 
 </html>
