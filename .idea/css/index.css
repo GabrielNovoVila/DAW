@@ -267,6 +267,7 @@ h2{
 
 .item:hover {
     transform: scale(1.05);
+    z-index: 9;
 }
 
 
