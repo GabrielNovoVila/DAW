@@ -186,3 +186,57 @@
         height: 100px;
     }
 }
+
+/* Parte de jQuery */
+
+#btn-filtro{
+    cursor:pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* oscurece */
+    z-index: 10;
+}
+
+.popup{
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index:12;
+    width:35%;
+    height:70%;
+    border:5px solid black;
+    border-radius:10px;
+    background-image:url("../imagenes/fondo.svg");
+    background-color:#BFAA8F;
+}
+
+.listaFiltros{
+    display:flex;
+    flex-direction: row-reverse;
+
+    justify-self: center;
+    margin:20px;
+    cursor: pointer;
+}
+
+.listaFiltros span{
+    width: 300px;
+    background-color: #D9D3C1;
+}
+
+#cruz{
+    width:10%;
+    height:auto;
+
+    position:absolute;
+    top:0;
+    right:0;
+    cursor: pointer;
+}
