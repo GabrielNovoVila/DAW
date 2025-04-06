@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asar&display=swap');
 
-/* Estilos generales */
 body {
     font-family: 'Asar', sans-serif;
     background-color: #BFAA8F;
@@ -11,26 +10,24 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
-}
-/* Estilos para el header */
-header {
-    display: flex;                       /* Usamos Flexbox para alinear los elementos */
-    justify-content: space-around;      /* Alineamos el logo a la izquierda y "Mi Cuenta" a la derecha */
-    align-items: center;                 /* Alineamos las imágenes verticalmente al centro */
-    padding: 10px;                       /* Espaciado dentro del header */
-    flex-wrap: wrap;                     /* Permitimos que los elementos se envuelvan en caso de que sea necesario */
+    min-height: 100vh; 
 }
 
-/* Imagen de logo */
+header {
+    display: flex;                     
+    justify-content: space-around;    
+    align-items: center;               
+    padding: 10px;                 
+    flex-wrap: wrap;              
+}
+
 #logoico {
     display: flex;
     margin:10px auto;
 }
 
-/* Imagen "Mi Cuenta" */
 header .micuentaico {
-    width: 50px;                         /* Ajustamos el tamaño de la imagen de "Mi Cuenta" */
+    width: 50px;                         
     height: 50px;
     border-radius: 100%;
     margin-top: 20px;
@@ -57,11 +54,10 @@ header .micuentaico {
     margin:0px auto;
 }
 
-/* Estilos para el menú de navegación */
 nav {
-    width: 80%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
-    text-align:center;                  /* Centrar los enlaces del menú */
-    margin: 10px auto;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
+    width: 80%;                  
+    text-align:center;            
+    margin: 10px auto;                
 }
 
 nav ul {
@@ -92,7 +88,7 @@ header nav ul li a:hover {
 }
 
 main {
-    flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
+    flex: 1; 
     width: 1024px;
     margin: 0px auto;
     padding: 0;
@@ -101,12 +97,12 @@ main {
 
 .grid-container {
     display: grid;
-    gap: 5px; /* Reducimos la separación */
+    gap: 5px; 
     padding: 10px;
     width: 80%;
     height:auto;
     align-items: center;
-    max-width: 1024px; /* Limitar el tamaño del grid */
+    max-width: 1024px; 
     margin: auto;
     
     grid-template-columns: 2fr 1fr;
@@ -129,23 +125,22 @@ main {
     border-radius: 10px;
 }
 
-/* Texto sobre la imagen */
 .item {
-    position: relative; /* Para que el span se posicione en relación con la imagen */
-    display: inline-block; /* Evita que se expanda innecesariamente */
+    position: relative;
+    display: inline-block;
 }
 
 .item span {
-    position: absolute; /* Lo coloca sobre la imagen */
-    bottom: 10px; /* Ajusta su posición */
+    position: absolute; 
+    bottom: 10px;
     left: 10px;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    display: inline-block; /* Hace que respete width y padding */
+    display: inline-block; 
     max-width:80%;
-    z-index: 10; /* Asegura que esté por encima de la imagen */
+    z-index: 10; 
 }
 
 
@@ -153,14 +148,13 @@ main {
     width:100%;
     height:100%;
 }
-/* 🔹 Imagen principal */
+
 .leader img{
     width:464px;
     grid-area: leader;
-    max-height: 464px; /* Tamaño controlado */
+    max-height: 464px; 
 }
 
-/* 🔹 Imágenes de la derecha */
 .lado {
     grid-area: lado;
     display: flex;
@@ -173,8 +167,6 @@ main {
     height: 275px;
 }   
 
-
-/* 🔹 Imágenes de abajo */
 .abajo {
     grid-area: abajo;
 
@@ -193,7 +185,7 @@ h2{
     color:white;
 }
 
-/* 🔹 Responsividad */
+/*  Responsividad */
 @media (max-width: 900px) {
     main{
         width:70%;
@@ -294,7 +286,7 @@ h2{
         padding-left:35px;
 
     }
-    /* Layout en columna */
+
     .grid-container {
         display: flex;
         flex-direction: column;
@@ -302,15 +294,13 @@ h2{
         gap: 10px;
     }
 
-    /* Centrar y dar tamaño uniforme a todas las imágenes */
     .grid-container img {
         width: 150px;
         height: 150px;
-        object-fit: cover; /* Para mantener proporción visual */
-        border-radius: 10px; /* Opcional: esquinas redondeadas */
+        object-fit: cover;
+        border-radius: 10px; 
     }
 
-    /* Ajuste adicional para .leader, .lado, .abajo si hace falta */
     .leader,
     .lado,
     .abajo {
@@ -329,21 +319,16 @@ h2{
     }
 }
 
-
-/* Efecto hover */
-
 .item:hover {
     transform: scale(1.05);
     z-index: 9;
 }
 
-
-/* Footer */
 footer {
     font-family: Inter, sans-serif;
-    text-align: center; /* Alinea el texto a la derecha */
-    padding: 10px 20px; /* Ajusta el espacio interno (arriba/abajo 10px, derecha/izquierda 20px) */
+    text-align: center;
+    padding: 10px 20px; 
     background: #333;
-    color: white; /* Color del texto*/
-    font-size: 12px; /* Reduce el tamaño de la fuente */
+    color: white;
+    font-size: 12px; 
 }
