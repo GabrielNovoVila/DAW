@@ -141,6 +141,11 @@ hr{
         left: 10px;
         bottom: -50px;
     }
+
+    .infoReceta{
+        column-count: 1;
+        column-gap: 0px;
+    }
 }
 
 @media (max-width: 400px) {
