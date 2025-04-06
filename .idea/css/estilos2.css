@@ -19,6 +19,8 @@ h2{
     font-family: 'Asar', "Roboto Light", sans-serif;
     font-size: 50px;
     color: black;
+    padding:0;
+
 }
 
 h3{
@@ -55,7 +57,6 @@ header .micuentaico {
     border-radius: 100%;
     right: 10px;
     top: 10px;
-    background-color: white;
 }
 
 #logoCulinarIA{
@@ -65,39 +66,44 @@ header .micuentaico {
 
 /* Estilos para el menú de navegación */
 nav {
-    width: 70%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
+    width: 60%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
     text-align:center;                  /* Centrar los enlaces del menú */
     margin: 10px auto;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
 }
 
 nav ul {
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
     background-color: #593520;
     list-style: none;
     padding: 10px 15px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
-    display: inline;
+    flex:1;
+    display: block;
     margin: 0 15px;
 }
 
 nav a {
     font-family: "Roboto Light", sans-serif;
     font-weight: bold;
+    font-size: 20px;
     color: white;
     text-decoration: none;
 }
 
+
+
 main {
-    flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
-    width: 1024px;
+    flex: 1;
+    width: 70%;         /* Igual que el nav */
+    max-width: 1024px;  /* Limita el tamaño para pantallas grandes */
     margin: 20px auto;
     padding: 20px;
 }
+
 
 #busquedas{
     display: grid;
@@ -160,93 +166,111 @@ main {
     cursor:pointer;
 }
 
-/* 🔹 Responsividad */
 @media (max-width: 900px) {
-
-    header{
+    header {
         width: 70%;
     }
 
-    main{
-        width:70%;
+    main {
+        width: 70%;
     }
 
-    #logoCulinarIA{
-        width:70%;
+    #logoCulinarIA {
+        width: 70%;
         height: 70%;
     }
 
-    #logoico{
-        width:40%;
+    #logoico {
+        width: 40%;
     }
 
-    #buscar{
-        width:100%; 
+    #buscar {
+        width: 100%;
     }
 
-    #btn-iniciar{
-        position:relative;
+    #btn-iniciar {
+        position: relative;
         left: 10px;
     }
 }
 
 @media (max-width: 600px) {
-    header{
+    header {
         width: 70%;
     }
 
-    main{
-        width:70%;
+    main {
+        width: 70%;
     }
 
-    #logoCulinarIA{
-        width:70%;
+    #logoCulinarIA {
+        width: 70%;
         height: 70%;
     }
 
-    #logoico{
-        width:40%;
+    #logoico {
+        width: 40%;
     }
 
-    #buscar{
-        width:100%; 
+    #buscar {
+        width: 100%;
     }
 
-    #btn-iniciar{
-        position:relative;
+    #btn-iniciar {
+        position: relative;
         left: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
     }
 }
 
 @media (max-width: 400px) {
-    header{
+    header {
         width: 70%;
     }
 
-    main{
-        width:70%;
+    main {
+        width: 70%;
     }
 
-    #logoCulinarIA{
-        width:70%;
+    #logoCulinarIA {
+        width: 70%;
         height: 70%;
     }
 
-    #logoico{
-        width:40%;
+    #logoico {
+        width: 40%;
     }
 
-    #buscar{
-        width:100%; 
+    #buscar {
+        width: 100%;
     }
 
-    #btn-iniciar{
-        position:relative;
+    #btn-iniciar {
+        position: relative;
         left: 10px;
     }
 
-    .botoncitos{
+    .botoncitos {
         width: 50%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
     }
 }
 

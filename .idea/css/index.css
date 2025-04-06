@@ -33,23 +33,23 @@ header .micuentaico {
     width: 50px;                         /* Ajustamos el tamaño de la imagen de "Mi Cuenta" */
     height: 50px;
     border-radius: 100%;
+    margin-top: 20px;
     right: 10px;
     top: 10px;
-    background-color: white;
 }
 
 .acercaNosotros{
     width:200px;
-    height:25px;
+    height:50px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin:0;
     margin-top: 20px;
-    margin-left: 20px;
     background-color: #593520;
     color:white;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #logoCulinarIA{
@@ -59,38 +59,43 @@ header .micuentaico {
 
 /* Estilos para el menú de navegación */
 nav {
-    width: 70%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
+    width: 80%;                         /* Aseguramos que el menú ocupe  el ancho disponible */
     text-align:center;                  /* Centrar los enlaces del menú */
     margin: 10px auto;                    /* Añadimos un pequeño margen en la parte superior para separarlo de las imágenes */
 }
 
 nav ul {
-    border-style: solid;
-    border-color: white;
-    border-width: 2px;
     background-color: #593520;
     list-style: none;
     padding: 10px 15px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul li {
-    display: inline;
+    flex:1;
+    display: block;
     margin: 0 15px;
 }
 
 nav a {
     font-family: "Roboto Light", sans-serif;
     font-weight: bold;
+    font-size: 20px;
     color: white;
     text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #7c6653;
 }
 
 main {
     flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
     width: 1024px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 0px auto;
+    padding: 0;
 }
 
 
@@ -114,12 +119,12 @@ main {
 }
 
 .contenedor-cabecera{
+    width:100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 0;
     color:white;
     border-radius: 10px;
 }
@@ -226,10 +231,32 @@ h2{
 }
 
 @media (max-width: 600px) {
+
+    nav ul {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin:0;
+        padding: 0;
+    }
+
+    nav ul li {
+        flex: none !important;
+        margin: 5px 0 !important;
+    }
+
+    nav ul li a {
+        display: block !important;
+        padding: 10px 20px !important;
+        width: 100% !important;
+        text-align: center !important;
+        box-sizing: border-box;
+    }
     .abajo {
         flex-direction: column;
         align-items: center;
     }
+
 
     .leader{
         width:60%;
@@ -253,12 +280,55 @@ h2{
     .abajo img{
         width: 78.7px;
         height: 78.7px;
-    }   
+    }
 
     .item span{
         font-size: 10px;
     }
 }
+
+@media (max-width: 400px) {
+
+    h2{
+        font-size:25px;
+        padding-left:35px;
+
+    }
+    /* Layout en columna */
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Centrar y dar tamaño uniforme a todas las imágenes */
+    .grid-container img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover; /* Para mantener proporción visual */
+        border-radius: 10px; /* Opcional: esquinas redondeadas */
+    }
+
+    /* Ajuste adicional para .leader, .lado, .abajo si hace falta */
+    .leader,
+    .lado,
+    .abajo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .item span {
+        font-size: 10px;
+        bottom: 5px;
+        left: 5px;
+        padding: 3px 6px;
+    }
+}
+
 
 /* Efecto hover */
 
@@ -271,7 +341,7 @@ h2{
 /* Footer */
 footer {
     font-family: Inter, sans-serif;
-    text-align: right; /* Alinea el texto a la derecha */
+    text-align: center; /* Alinea el texto a la derecha */
     padding: 10px 20px; /* Ajusta el espacio interno (arriba/abajo 10px, derecha/izquierda 20px) */
     background: #333;
     color: white; /* Color del texto*/
