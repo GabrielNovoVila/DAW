@@ -16,11 +16,11 @@
 
 .grid-container {
     display: grid;
-    gap: 5px; /* Reducimos la separación */
+    gap: 5px; 
     padding: 10px;
     width: 40%;
     height:auto;
-    max-width: 1024px; /* Limitar el tamaño del grid */
+    max-width: 1024px;
     margin: auto;
     
     grid-template-columns: 2fr 1fr;
@@ -34,11 +34,11 @@
 
 .grid-container2 {
     display: grid;
-    gap: 5px; /* Reducimos la separación */
+    gap: 5px;
     padding: 10px;
     width: 40%;
     height:auto;
-    max-width: 1024px; /* Limitar el tamaño del grid */
+    max-width: 1024px; 
     margin: auto;
     
     grid-template-columns: 2fr 1fr;
@@ -55,23 +55,22 @@
     grid-area:texto;
 }
 
-/* Texto sobre la imagen */
 .item {
-    position: relative; /* Para que el span se posicione en relación con la imagen */
-    display: inline-block; /* Evita que se expanda innecesariamente */
+    position: relative; 
+    display: inline-block;
 }
 
 .item span {
-    position: absolute; /* Lo coloca sobre la imagen */
-    bottom: 10px; /* Ajusta su posición */
+    position: absolute;
+    bottom: 10px;
     left: 10px;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    display: inline-block; /* Hace que respete width y padding */
+    display: inline-block; 
     max-width:60%;
-    z-index: 10; /* Asegura que esté por encima de la imagen */
+    z-index: 10;
 }
 
 
@@ -80,13 +79,12 @@
     height:100%;
     grid-area: leader;
 }
-/* 🔹 Imagen principal */
+
 .leader img{
     width:270px;
-    height: 270px; /*Tamaño controlado */
+    height: 270px; 
 }
 
-/* 🔹 Imágenes de la derecha */
 .lado {
     grid-area: lado;
     display: flex;
@@ -99,8 +97,6 @@
     height:132px;
 }   
 
-
-/* 🔹 Imágenes de abajo */
 .abajo {
     grid-area: abajo;
 
@@ -116,7 +112,7 @@
     height:132px;
 }
 
-/* 🔹 Responsividad */
+/*  Responsividad */
 @media (max-width: 900px) {
 
     .grid-container {
@@ -199,7 +195,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6); /* oscurece */
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
 }
 
