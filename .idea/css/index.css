@@ -4,6 +4,9 @@
 body {
     font-family: 'Asar', sans-serif;
     background-color: #BFAA8F;
+    background-image: url("../imagenes/fondo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
     margin: 0px auto;
     padding: 0;
     display: flex;
@@ -87,13 +90,7 @@ main {
     flex: 1; /* Esto hace que el contenido ocupe el espacio disponible */
     width: 1024px;
     margin: 20px auto;
-    background-image: url("../imagenes/fondo.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #BFAA8F;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
 
 
