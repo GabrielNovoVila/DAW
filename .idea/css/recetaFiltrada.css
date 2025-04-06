@@ -8,8 +8,8 @@ main{
 
 .card {
     display: grid;
-    align-items: center; /* Alinear verticalmente los elementos */
-    justify-content: start; /* Asegurar que todo se alinee a la izquierda */
+    align-items: center; 
+    justify-content: start;
     justify-self: center;
     margin: 20px;
     color: black;
@@ -17,19 +17,19 @@ main{
     width: 500px;
     height: 100px;
     border: 5px solid black;
-    overflow: hidden; /* Evita que elementos sobresalgan */
+    overflow: hidden; 
     padding:0px;
     background-color: #D9D3C1;
 
-    grid-template-columns: 100px auto; /* Primera columna para la imagen, segunda para el texto */
-    grid-template-areas: "foto texto"; /* Definir áreas correctamente */
+    grid-template-columns: 100px auto;
+    grid-template-areas: "foto texto"; 
 }
 
 .fotitos {
-    grid-area: foto; /* Asigna la imagen al área correspondiente */
-    width: 100px; /* Hace que la imagen tenga el mismo ancho que la columna */
-    height: 100px; /* Hace que ocupe toda la altura del card */
-    object-fit: cover; /* Recorta la imagen para llenar el contenedor sin deformarse */
+    grid-area: foto;
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover;
     display:block;
     border-right:5px solid black;
 
@@ -38,11 +38,11 @@ main{
 }
 
 .content {
-    grid-area: texto; /* Asegura que el texto esté en la parte derecha */
+    grid-area: texto;
     display: grid;
     justify-content: center;
     align-items: center;
-    padding-left: 10px; /* Agregar espacio entre la imagen y el texto */
+    padding-left: 10px;
     position:relative;
     bottom:13px;
     
@@ -64,7 +64,7 @@ hr{
 
 .card hr{
     position:relative;
-    bottom: -20px; /* Ajustar la posición del hr dentro del card */
+    bottom: -20px; 
 }
 
 
@@ -76,7 +76,7 @@ hr{
 }
 
 .content hr{    
-    grid-area:barra; /* Asigna el hr al área correspondiente */
+    grid-area:barra; 
     width: 2000px;
     height: 2px;
     background-color: black;
@@ -84,21 +84,21 @@ hr{
     margin-top: 0px;
 
     position:relative;
-    bottom: 8px; /* Ajustar la posición del hr dentro del card */
-    left: -10px; /* Ajustar la posición del hr dentro del card */
+    bottom: 8px; 
+    left: -10px; 
 }
 
 .content p{
     grid-area:descripcion;
     position:relative;
-    bottom: 10px; /* Ajustar la posición del texto dentro del card */
+    bottom: 10px; 
 }
 
 a{
     text-decoration: none;
 }
 
-/* 🔹 Responsividad */
+/*  Responsividad */
 @media (max-width: 900px) {
 
     header{
@@ -196,7 +196,7 @@ a{
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6); /* oscurece */
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 10;
 }
 
