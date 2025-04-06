@@ -8,13 +8,13 @@ main{
 
 #busquedas {
     display: flex;
-    justify-content: flex-end; /* Alinea todo el contenido a la derecha */
-    align-items: center; /* Centra verticalmente */
-    gap: 10px; /* Añade espacio entre los elementos */
+    justify-content: flex-end; 
+    align-items: center; 
+    gap: 10px;
 }
 
 .buscador {
-    display: flex; /* Asegura que el formulario y el botón se comporten bien */
+    display: flex;
     align-items: center;
 }
 
@@ -29,11 +29,11 @@ main{
 
 #comidas {
     display: flex;
-    flex-direction: column; /* Si quieres una distribución vertical */
-    align-items: center; /* Centrar el contenido horizontalmente */
-    text-align: center; /* Asegurar que el texto esté alineado correctamente */
-    max-width: 80%; /* Evita que el contenido sea demasiado ancho */
-    margin: 0 auto; /* Centra el div en la página */
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+    max-width: 80%; 
+    margin: 0 auto; 
 }
 
 h2{
@@ -44,12 +44,12 @@ h2{
 }
 
 p {
-    max-width: 80%; /* Para que no se haga una columna demasiado angosta */
+    max-width: 80%; 
     text-align: justify;
 }
 
 #foto-tarta {
-    width: 80%; /* Para asegurarte de que la imagen no se desborde */
+    width: 80%; 
     height: auto;
     padding-bottom: 20px;
     border-radius: 10px;
@@ -78,7 +78,7 @@ hr{
     outline-style:dotted;
 }
 
-/* 🔹 Responsividad */
+/*  Responsividad */
 @media (max-width: 900px) {
 
     header{
