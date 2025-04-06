@@ -1,6 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+
 }
 
 /* Imágenes responsivas */
@@ -9,9 +10,45 @@ img {
     height: auto;
 }
 
+header {
+
+    background-color: transparent;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .contenedor-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    width: 80%; /* sí, si quieres que coincida con el header */
+    margin: 0 auto;
+}
+
+#logoCulinarIA{
+    margin: 0;
+}
+
+header figure {
+    margin: 0;
+}
+
+header .logoico {
+    width: 200px;
+    margin:0;
+}
+
+header .micuentaico {
+    width: 50px;
+}
+
 main{
     display: flex;
     justify-content:space-between;
+    align-items: flex-start; /* <-- Añade esta línea */
     width: 100%;
     max-width: 1024px; /* Mantienes tu máximo pero se ajusta */
     box-sizing: border-box; /* Incluye padding en el ancho */
@@ -20,10 +57,10 @@ main{
 
 aside {
     width:20%;
-
     order:2;
     display: flex;
     flex-direction:column;
+
 }
 
 aside p{
@@ -59,10 +96,22 @@ aside p{
     z-index: 10; /* Asegura que esté por encima de la imagen */
 }
 
+nav{
+    width:80%;
+}
+
 ul{
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+
+nav ul li a {
+    font-family: "Roboto Light", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
 }
 
 #texto{
@@ -95,12 +144,14 @@ span{
 
     main {
         flex-direction: column;
+        align-items: center; /* <-- Centra los hijos en columna */
     }
-    
+
     aside {
         width: 50%;
         order: 0;
         margin-top: 20px;
+        align-items: center; /* <-- Centra el contenido del aside */
     }
     
     #texto {
@@ -158,53 +209,6 @@ span{
         bottom: 5px;
         left: 5px;
     }
-    
-    ul {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    aside p {
-        font-size: 12px;
-    }
-    li{
-        text-align: left;
-        padding:0px;
-        margin:0px;
-    }
 }
 
-/* Ajustes para pantallas grandes */
-@media (min-width: 1200px) {
-    nav ul {
-        justify-content: center; /* Centra los elementos */
-        flex-wrap: nowrap; /* Evita saltos de línea */
-    }
 
-    nav ul li {
-        margin: 0 25px; /* Espaciado proporcional */
-    }
-
-    nav ul li a {
-        font-size: 1.2rem; /* Texto más legible */
-        white-space: nowrap; /* Evita abreviar "FORO", "BLOG" */
-    }
-}
-
-/* Base para el menú */
-nav ul {
-    display: flex;
-    justify-content: center; /* Centrado horizontal */
-    flex-wrap: wrap; /* Permite saltos de línea si es necesario */
-    padding: 10px 5px; /* Padding reducido */
-}
-
-nav ul li {
-    margin: 0 1vw; /* Espaciado proporcional al viewport */
-}
-
-nav ul li a {
-    font-size: clamp(12px, 1.5vw, 16px); /* Tamaño flexible entre 12px y 16px */
-    white-space: nowrap; /* Evita que se corte el texto */
-    padding: 5px 10px;
-}
