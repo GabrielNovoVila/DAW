@@ -4,7 +4,6 @@ html, body {
 
 }
 
-/* Imágenes responsivas */
 img {
     max-width: 100%;
     height: auto;
@@ -24,7 +23,7 @@ header .contenedor-img {
     display: flex;
     justify-content: space-between;
     align-items: self-start;
-    width: 80%; /* sí, si quieres que coincida con el header */
+    width: 80%; 
     margin: 0 auto;
 }
 
@@ -48,10 +47,10 @@ header .micuentaico {
 main{
     display: flex;
     justify-content:space-between;
-    align-items: flex-start; /* <-- Añade esta línea */
+    align-items: flex-start;
     width: 100%;
-    max-width: 1024px; /* Mantienes tu máximo pero se ajusta */
-    box-sizing: border-box; /* Incluye padding en el ancho */
+    max-width: 1024px; 
+    box-sizing: border-box; 
 }
 
 
@@ -77,23 +76,22 @@ aside p{
     height: 100px;
 }
 
-/* Texto sobre la imagen */
 .item {
-    position: relative; /* Para que el span se posicione en relación con la imagen */
-    display: inline-block; /* Evita que se expanda innecesariamente */
+    position: relative; 
+    display: inline-block;
 }
 
 .item span {
-    position: absolute; /* Lo coloca sobre la imagen */
-    bottom: 10px; /* Ajusta su posición */
+    position: absolute;
+    bottom: 10px;
     left: 10px;
     background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
-    display: inline-block; /* Hace que respete width y padding */
+    display: inline-block; 
     max-width:80%;
-    z-index: 10; /* Asegura que esté por encima de la imagen */
+    z-index: 10; 
 }
 
 nav{
@@ -131,27 +129,26 @@ span{
     max-width:25%;
 }
 
-/* Responsividad para tablets (768px - 1024px) */
 @media (max-width: 1024px) {
 
     .grid-container {
-        width: 95%; /* Reducción más gradual */
+        width: 95%;
     }
     
     .leader img {
-        max-width: 100%; /* Forza ajuste al contenedor */
+        max-width: 100%;
     }
 
     main {
         flex-direction: column;
-        align-items: center; /* <-- Centra los hijos en columna */
+        align-items: center;
     }
 
     aside {
         width: 50%;
         order: 0;
         margin-top: 20px;
-        align-items: center; /* <-- Centra el contenido del aside */
+        align-items: center;
     }
     
     #texto {
@@ -172,7 +169,6 @@ span{
     }
 }
 
-/* Responsividad para móviles (hasta 767px) */
 @media (max-width: 767px) {
     .item span {
         font-size: 12px;
@@ -202,7 +198,6 @@ span{
     }
 }
 
-/* Ajustes para pantallas muy pequeñas (hasta 480px) */
 @media (max-width: 480px) {
     .item span {
         font-size: 10px;
